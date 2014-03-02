@@ -1,7 +1,7 @@
 ---
 - hosts: rpmbuilders
   gather_facts: no
-  user: root
+  sudo: yes
   vars:
     acs_ver: 4.3.0
     acs_url: https://dist.apache.org/repos/dist/release/cloudstack/releases
