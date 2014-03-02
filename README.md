@@ -21,14 +21,16 @@ Defining hosts
 ---------------
 I typically define my hosts and set some variables in /etc/ansible/hosts 
 
-  [rpmbuilders]
-  foo-23-21-16-253.compute-1.davidcloudstack.com
-  [rpmbuilders:vars]
-  ansible_ssh_private_key_file=~/.ssh/david.pem
-  [debbuilders]
-  foo-54-237-56-170.compute-1.davidcloudstack.com
-  [debbuilders:vars]
-  ansible_ssh_private_key_file=~/.ssh/david.pem
+```ini
+[rpmbuilders]
+foo-23-21-16-253.compute-1.davidcloudstack.com
+[rpmbuilders:vars]
+ansible_ssh_private_key_file=~/.ssh/david.pem
+[debbuilders]
+foo-54-237-56-170.compute-1.davidcloudstack.com
+[debbuilders:vars]
+ansible_ssh_private_key_file=~/.ssh/david.pem
+```
 
 The [rpmbuilders] and [debbuilders] sections define the hosts to be used. The :vars section merely sets the ssh key to use. 
 
