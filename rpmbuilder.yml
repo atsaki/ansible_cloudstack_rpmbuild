@@ -4,7 +4,7 @@
   sudo: yes
   vars:
     acs_ver: 4.3.0
-    acs_url: https://dist.apache.org/repos/dist/release/cloudstack/releases
+    acs_url: https://dist.apache.org/repos/dist/dev/cloudstack/
   tasks:
   - name: Install deps and niceties
     yum: name=$item state=latest
