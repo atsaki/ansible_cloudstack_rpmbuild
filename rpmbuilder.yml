@@ -9,7 +9,7 @@
     maven_url: http://mirror.catn.com/pub/apache/maven/maven-3
   tasks:
   - name: Install deps and niceties
-    yum: name=$item state=latest
+    yum: name={{item}} state=latest
     with_items:
      - wget
      - rpm-build
